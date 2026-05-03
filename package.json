@@ -4,11 +4,11 @@
   "private": true,
   "description": "A MERN stack news application with an Express API and React client.",
   "scripts": {
-    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
-    "server": "npm run dev --prefix server",
-    "client": "npm run dev --prefix client",
-    "build": "npm run build --prefix client",
-    "seed": "npm run seed --prefix server"
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "server": "npm run dev --prefix backend",
+    "client": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "seed": "npm run seed --prefix backend"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
